@@ -10,6 +10,9 @@ type StatisticsViewProps = {
 const StatisticsView = ({ timeTrackers }: StatisticsViewProps) => {
   const { getTotalElapsedTime } = useStatistics();
 
+  if (!timeTrackers.length)
+    return null;
+
   return (
     <div className='statistics'>
       <details>
