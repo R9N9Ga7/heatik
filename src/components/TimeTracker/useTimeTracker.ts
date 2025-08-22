@@ -38,7 +38,7 @@ const useTimeTracker = ({
     if (intervalRef.current)
       return;
 
-    const id = setInterval(() => {
+    const id = window.setInterval(() => {
       if (!endTimeRef.current)
         return;
 
