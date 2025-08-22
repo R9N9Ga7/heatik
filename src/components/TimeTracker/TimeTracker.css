@@ -1,0 +1,109 @@
+.timer {
+  border: 1px solid #333;
+  border-radius: 30px;
+  width: 270px;
+  padding: 20px;
+  background-color: #131216;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.timer .header .name {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #444548;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.timer .header .name:focus {
+  border: none;
+  outline: none;
+}
+
+.timer .header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #0D0E10;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.timer .header .control {
+  color: #313234;
+  background-color: #20202200;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.timer .header .control:hover {
+  color: #595A60;
+}
+
+.timer .header .control__selected {
+  color: #595A60;
+  background-color: #202022;
+}
+
+.timer .body {
+  text-align: center;
+}
+
+.timer .body .remaining-time {
+  margin: 0;
+  font-size: 3rem;
+  color: #444548;
+  cursor: default;
+}
+
+.timer .body .target-time {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #444548;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.timer .body .target-time:focus {
+  border: none;
+  outline: none;
+}
+
+.timer .footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer .footer .control {
+  background-color: #0E0E10;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  height: 50px;
+  color: #333436;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.timer .footer .control:hover {
+  color: #444548;
+}
+
+.timer .footer .control:hover svg {
+  fill: #444548;
+}
+
+.timer .footer .control svg {
+  height: 100%;
+  fill: #333436;
+}

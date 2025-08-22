@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.app .content {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 312px);
+  gap: 2rem;
+
+  width: fit-content;
+  max-width: 100%;
+  justify-content: center;
+  justify-items: start;
+}
