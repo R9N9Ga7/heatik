@@ -7,7 +7,7 @@ type HeaderProps = {
 const HeaderView = ({ onAddTimer }: HeaderProps) => {
   return (
     <header>
-      <button onClick={onAddTimer}>Add timer</button>
+      <button className='control' onClick={onAddTimer}>Add timer</button>
     </header>
   );
 };
