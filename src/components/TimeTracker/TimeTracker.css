@@ -1,21 +1,21 @@
 .timer {
-  border: 1px solid #333;
-  border-radius: 30px;
-  width: 270px;
-  padding: 20px;
-  background-color: #131216;
+  border: var(--border);
+  border-radius: 2rem;
+  width: var(--time-tracker-width);
+  padding: var(--time-tacker-padding);
+  background: linear-gradient(var(--primary-widget-color), var(--secondary-widget-color));
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1rem;
+  box-shadow: var(--shadow);
 }
 
 .timer .header .name {
   background: none;
   border: none;
   text-align: center;
-  color: #444548;
-  font-size: 2rem;
+  font-size: 1.6rem;
   width: 100%;
 }
 
@@ -25,32 +25,8 @@
 }
 
 .timer .header {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  background-color: #0D0E10;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.timer .header .control {
-  color: #313234;
-  background-color: #20202200;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 10px;
-  width: 100%;
-  cursor: pointer;
-  font-size: 1.3rem;
-}
-
-.timer .header .control:hover {
-  color: #595A60;
-}
-
-.timer .header .control__selected {
-  color: #595A60;
-  background-color: #202022;
+  background-color: #0D1627;
+  border-radius: 1.2rem
 }
 
 .timer .body {
@@ -60,7 +36,6 @@
 .timer .body .remaining-time {
   margin: 0;
   font-size: 3rem;
-  color: #444548;
   cursor: default;
 }
 
@@ -68,7 +43,6 @@
   background: none;
   border: none;
   text-align: center;
-  color: #444548;
   font-size: 1.5rem;
   width: 100%;
 }
@@ -80,30 +54,25 @@
 
 .timer .footer {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .timer .footer .control {
-  background-color: #0E0E10;
+  background-color: #0D182C;
   border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  height: 50px;
-  color: #333436;
+  border-radius: 2rem;
+  padding: 1rem 1.7rem;
+  height: 3.3rem;
   cursor: pointer;
   text-transform: uppercase;
 }
 
 .timer .footer .control:hover {
-  color: #444548;
-}
-
-.timer .footer .control:hover svg {
-  fill: #444548;
+  background-color: #111f39;
 }
 
 .timer .footer .control svg {
   height: 100%;
-  fill: #333436;
+  fill: var(--color-on-button);
 }

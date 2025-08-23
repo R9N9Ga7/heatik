@@ -1,19 +1,18 @@
-header {
-  padding: 1rem;
+.header {
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 
-header .control {
-  color: #444548;
-  background-color: #0E0E10;
+.header .control {
+  background-color: #213452;
   border: none;
-  border-radius: 10px;
-  padding: 10px 15px;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
   cursor: pointer;
   font-size: 1.3rem;
 }
 
-header .control:hover {
-  color: #595A60;
+.header .control:hover {
+  background-color: #1d2e49;
 }

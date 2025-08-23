@@ -6,13 +6,12 @@
 }
 
 .app .content {
-  margin: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 312px);
-  gap: 2rem;
-
-  width: fit-content;
-  max-width: 100%;
   justify-content: center;
   justify-items: start;
+  grid-template-columns: repeat(auto-fit, calc(var(--time-tracker-width) + var(--time-tacker-padding) * 2));
+  max-width: 100%;
+  width: fit-content;
+  margin: 2rem;
+  gap: 2rem;
 }
